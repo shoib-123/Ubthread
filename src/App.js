@@ -1,25 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from "react";
+import "./Global.css";
+// import { StoreSkeleton } from "./components/organisms";
+// import ShopSetup from "./pages/ShopSetup";
+// import SignIn from "./pages/SignIn";
+// import { useSelector } from "react-redux";
+// import { handleValidate } from "./utils/globalFunctions";
+import Navigation from "./pages";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default function App() {
+  // const data = useSelector((state) => state);
+
+  return <Navigation />;
 }
-
-export default App;

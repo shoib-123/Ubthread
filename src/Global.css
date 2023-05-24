@@ -1,0 +1,128 @@
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  box-sizing: border-box;
+  width: 100%;
+  flex-grow: 1;
+  color: #c8d8ff;
+  font-size: 1.6rem;
+  font-weight: 400;
+  background-color: #06051a;
+  display: flex;
+  flex-direction: column;
+}
+
+@font-face {
+  font-family: "MainFont";
+  src: url("/public/assets/fonts/SF-Pro.ttf") format("truetype");
+}
+
+.page-title {
+  font-family: "MainFont";
+  font-weight: 800;
+  font-size: 45px;
+  line-height: 70px;
+}
+
+.select {
+  border: 0 !important;
+  border-bottom: 0.5px solid #c8d8ff !important;
+  filter: drop-shadow(0px 1px 0px rgba(0, 0, 0, 0.05)) !important;
+  border-radius: 0 !important;
+}
+
+.section-title {
+  font-family: "MainFont";
+  font-weight: 800;
+  font-size: 35px;
+  line-height: 40px;
+}
+
+.input-label {
+  font-family: "MainFont";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #c8d8ff;
+}
+
+.placeholder-text {
+  font-family: "MainFont";
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 17px;
+  color: #5c6d8e;
+}
+
+.nav-text {
+  font-family: "MainFont";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  background-image: linear-gradient(to left, #5961f8, #f2d9f7);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.btn-text {
+  font-family: "MainFont";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.btn {
+  background: radial-gradient(
+      145.46% 122.03% at 88.28% 10.25%,
+      rgba(222, 164, 242, 0.1) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    radial-gradient(
+      93.02% 80.9% at 22.44% 86.73%,
+      rgba(110, 111, 248, 0.1) 0%,
+      rgba(110, 111, 248, 0) 100%
+    ),
+    linear-gradient(
+      131.02deg,
+      rgba(104, 108, 248, 0.059) 10.34%,
+      rgba(236, 171, 241, 0.059) 90.18%
+    ),
+    #060519;
+  width: 500px;
+  height: 1000px;
+}
+
+.desc-text {
+  @extend .placeholder-text;
+  background-image: linear-gradient(to left, #5961f8, #f2d9f7);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.img-container {
+  height: 100vh;
+}
+
+.backgroundCover {
+  background: url("../public//assets/images/background.png");
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
